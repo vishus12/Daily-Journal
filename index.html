@@ -1,35 +1,51 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
 
-    <body>
-        <main id="">
-            <h2>Daily Journal</h2>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <main>
+        <h2>Daily Journal</h2>
+        <div class="containerFlex">
             <form action="Daily Journal">
                 <fieldset>
-                    <label for ="journalDate">Date of entry</label>
+                    <label for="journalDate">Date of entry</label>
                     <input type="date" name="journalDate" id="journalDate">>
                     <article>
-                    <label for="conceptArea">Concepts Covered</label>
-                    <textarea name="Concepts Covered" id="conceptsCovered" cols="30" rows="2"></textarea>
-                    <article>
-                    <label for="journalArea">Journal Entry</label>
-                    <textarea name="Concepts Covered" id="conceptsCovered" cols="30" rows="2"></textarea>
-                    <select name="mood" id="mood">mood</select>
-                    <article>
-                        <input type="submit" value="Record Journal Entry">
-                    </article>
-                    </article>
+                        <label for="conceptArea">Concepts Covered</label>
+                        <textarea name="Concepts Covered" id="conceptsCovered" cols="30" rows="2"></textarea>
+                        <article>
+                            <label for="journalEntry">Journal Entry</label>
+                            <textarea name="Concepts Covered" id="conceptsCovered" cols="30" rows="2"></textarea>
+                            <article>
+                                <label for="moodArea">Mood</label>
+                                <select name="mood" id="mood">
+                                    <option value="Empty"> </option>
+                                    <option value="Happy">Happy</option>
+                                    <option value="Sad">Sad</option>
+                                    <option value="Mad">Mad</option>
+                            </article>
+                            </select>
+                            <article>
+                                <input type="submit" value="Record Journal Entry">
+                            </article>
+                        </article>
                     </article>
                 </fieldset>
             </form>
+        </div>
+        <h2>Past Entries</h2>
+        <div id="entryLog">
 
-        </main>
+        </div>
 
-        <script type="module" src="./scripts/main.js"></script>
-    </body>
+    </main>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
 </html>
